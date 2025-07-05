@@ -1,3 +1,7 @@
+.container {
+	margin: 10px 400px;
+}
+
 .login {
 	display: flex;
 	flex-wrap: wrap;
@@ -5,11 +9,13 @@
 	gap: 14px;
 	border: 1px solid black;
 	padding: 10px;
+	min-width: min-content;
 }
 
 .name input,
 .email input {
 	width: 100%;
+	box-sizing: border-box;
 }
 
 .name {
