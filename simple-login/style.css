@@ -1,0 +1,27 @@
+.login {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-end;
+	gap: 14px;
+	border: 1px solid black;
+	padding: 10px;
+}
+
+.name input,
+.email input {
+	width: 100%;
+}
+
+.name {
+	flex-grow: 1;
+	flex-basis: 90px;
+}
+
+.email {
+	flex-grow: 3;
+	flex-basis: 160px;
+}
+
+button {
+	flex-grow: 1;
+}
