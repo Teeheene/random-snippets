@@ -1,0 +1,46 @@
+.title{
+	text-align: center;
+	font-size: 60px;
+	font-weight: bold;
+}
+
+.space{
+	padding: 20px;
+}
+
+.wrapper.text{
+	text-align: center;
+	font-size: 20px;
+}
+
+.wrapper.skills{
+	margin: auto;
+	width: 95%;
+	border: 5px solid black;
+}
+
+.percent{
+	background-color: pink;
+	padding: 10px;
+	margin: 1px;
+}
+
+.percent.c{
+	width: 80%;
+}
+
+.percent.java{
+	width: 60%;
+}
+
+.percent.html{
+	width: 30%;
+}
+
+.percent.css{
+	width: 10%;
+}
+
+.percent.asm{
+	width: 20%;
+}
