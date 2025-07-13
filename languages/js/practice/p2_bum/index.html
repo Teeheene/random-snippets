@@ -1,0 +1,39 @@
+<!DOCtype html>
+
+<html lang="en">
+	<head>
+		<title>Bum Teller</title>
+		<meta charset="utf-8">
+	</head>
+	<body>
+		<label for="bums">Are you a bum?</label>
+		<select id="bums">
+			<option value="">Yes or No?</option>
+			<option value="yes">Yes</option>
+			<option value="no">No</option>
+		</select>
+		<p></p>
+		<script>
+			const select = document.querySelector("select");
+			const para = document.querySelector("p");
+			
+			select.addEventListener("change", setBum);
+			
+			function setBum()
+			{
+				const choice = select.value;
+
+				if(choice === "yes")
+				{
+					para.textContent = "You're a certified bum and you know that.";
+				} else if(choice === "no")
+				{
+					para.textContent = "You're lying, you know you're a bum!";
+				} else
+				{
+					para.textContent = "";
+				}
+			}
+		</script>
+	</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCtype html>
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Test Check Login</title>
+	</head>
+	<body>
+		<script>
+			let user;
+			let password;
+
+			user = prompt("Enter User: ");
+			if(user == "Admin" || user == "admin")
+			{
+				password = prompt("Enter password: ");
+				if(password == null || password == "")
+				{
+					console.log("Canceled");
+				} else if(password == "TheMaster")
+				{
+					console.log("Welcome!");
+				} else 
+				{
+					console.log("Wrong password.");
+				}
+			} else 
+			{
+				console.log("Canceled");	
+			}
+		</script>
+	</body>
+</html>
