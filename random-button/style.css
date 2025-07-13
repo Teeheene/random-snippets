@@ -1,0 +1,31 @@
+.box {
+	width:400px;
+	height: 600px;
+	margin: auto;
+	padding: 100px;
+}
+
+.decline {
+	background-color: #f26868;
+	border-width: 10px;
+	border-style: ridge;
+	border-top-color: #f26868;
+	border-left-color: #d95555;
+	border-right-color: #d95555;
+	border-bottom-color: #b04141;
+}
+
+a.decline:hover {
+	background-color: #d95555;
+	border-width: 9px;
+	border-style: ridge;
+	border-top-color: #d95555;
+	border-left-color: #b04141;
+	border-right-color: #b04141;
+	border-bottom-color: #873232;
+}
+
+a.decline {
+	color: white;
+	text-decoration: none;
+}
