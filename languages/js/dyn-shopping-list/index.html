@@ -1,0 +1,52 @@
+<!DOCtype html>
+
+<html lang="en">
+	<head>
+		<title>Shopping List</title>
+		<meta charset="utf-8">
+	</head>
+	<body>
+		<h1>Shopping List</h1>
+		<div>
+			<label for="item">Enter a new item:</label>
+			<input type="text" name="item" id="item">
+			<button id="focusButton">Add</button>
+		</div>
+		<ul></ul>
+		
+		<script>
+			const list = document.querySelector("ul");
+			const input = document.querySelector("input");
+			const button = document.querySelector("button");
+
+			button.onclick = addItem;
+
+			function addItem()
+			{
+				const value = input.value;
+				input.value = "";
+				
+				const item = document.createElement("li");
+				const text = document.createElement("span");
+				const deleteButton = document.createElement("button");
+
+				text.textContent = value;
+				deleteButton.textContent = "Delete";
+
+				deleteButton.onclick = function ()
+				{
+					item.remove();
+				}
+
+				item.appendChild(text);
+				item.appendChild(deleteButton);
+				list.appendChild(item);
+			}
+
+			document.getElementById("focusButton").addEventListener("click",
+				() => {
+					input.focus({ focusVisible: true });
+				});
+		</script>
+	</body>
+</html>
