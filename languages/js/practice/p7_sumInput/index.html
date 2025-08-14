@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+		<title>sum inputs</title>
+		<meta charset="utf-8">
+	</head>
+	<body>
+		<script>
+			function sumInput() {
+				let nArr = [];
+				let sum = 0;
+				let item;
+
+				do {
+					item = prompt();
+					if(item != '' && item != 'Cancel')
+						nArr.push(+item);
+				} while(item != '' && item != 'Cancel');
+				
+				for(item of nArr) { sum += item; }
+				return sum;
+			}
+
+			console.log(sumInput());
+		</script>
+	</body>
+</html>
