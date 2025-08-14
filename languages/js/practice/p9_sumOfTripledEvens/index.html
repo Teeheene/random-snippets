@@ -1,0 +1,27 @@
+<!DOCTYPE HTML >
+<html lang="en">
+   <head>
+      <title>Sum of Tripled Evens</title>
+		<meta charset="utf-8">
+   </head>
+   <body>
+		<script>
+			function isEven(x) {
+				return !(x % 2);
+			}
+
+			function tripleNum(x) {
+				return x * 3;
+			}
+
+			function sumOfTripledEvens(array) {
+				
+				return array.filter(isEven).map(tripleNum).reduce((sum,currItem) => {
+					return sum += currItem;
+				},0);
+			}
+
+			console.log(sumOfTripledEvens([1,2,3,4]));
+		</script>
+   </body>
+</html>
