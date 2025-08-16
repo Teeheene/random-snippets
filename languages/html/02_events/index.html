@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="utf-8">
+   <title></title>
+</head>
+<body>
+	<button onclick="alertFunction()">Click Me</button>
+	<button id="btn">Click Me or ELSE</button>
+	<button id="btn">Click Me Too</button>
+	<br>
+
+	<div id="container">
+		<button id="one">Click Me</button>
+		<button id="two">Click Me</button>
+		<button id="three">Click Me</button>
+	</div>
+   <script>
+		const btns = document.querySelectorAll("#btn");
+		btns[0].onclick = alertFunction;
+		for(const btn of btns) {
+			btn.addEventListener("click", function(e) {
+				console.log(e.target);
+				e.target.style.background = "blue";
+			});
+		}
+
+		function alertFunction() {
+			alert("hurrah!");
+		}
+
+		const buttons = document.querySelectorAll("button");
+		buttons.forEach((button) => {
+			button.addEventListener("click", () => {
+				alert(button.id);
+			})
+		})
+	</script>
+</body>
+</html>
